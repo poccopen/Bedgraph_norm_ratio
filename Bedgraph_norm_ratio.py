@@ -80,6 +80,7 @@ else:
 			chrXVI_len = len(record.seq)
 		elif record.id == "chrmt":
 			chrmt_len = len(record.seq)
+	print("Reference genome sequence loaded.")
 
 	#サンプルデータ向け配列群をゼロで初期化する
 	array_sample_chrI = np.zeros(chrI_len)
@@ -138,220 +139,129 @@ else:
 	array_ratio_chrXVI = np.zeros(chrXVI_len)
 	array_ratio_chrmt = np.zeros(chrmt_len)
 
+	print("Sample data loading started.")
 	#サンプルデータを読み込む
 	with open(sample_data_name) as sample_file:
 		for line in sample_file:
 			line = line.split()
+			start = line[1]
+			end = line[2]
+			read_count = line[3]
 			if line[0] == "chrI":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrI[n] = read_count
 			elif line[0] == "chrII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrII[n] = read_count
 			elif line[0] == "chrIII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrIII[n] = read_count
 			elif line[0] == "chrIV":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrIV[n] = read_count
 			elif line[0] == "chrV":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrV[n] = read_count
 			elif line[0] == "chrVI":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrVI[n] = read_count
 			elif line[0] == "chrVII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrVII[n] = read_count
 			elif line[0] == "chrVIII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrVIII[n] = read_count
 			elif line[0] == "chrIX":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrIX[n] = read_count
 			elif line[0] == "chrX":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrX[n] = read_count
 			elif line[0] == "chrXI":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrXI[n] = read_count
 			elif line[0] == "chrXII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrXII[n] = read_count
 			elif line[0] == "chrXIII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrXIII[n] = read_count
 			elif line[0] == "chrXIV":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrXIV[n] = read_count
 			elif line[0] == "chrXV":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrXV[n] = read_count
 			elif line[0] == "chrXVI":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrXVI[n] = read_count
 			elif line[0] == "chrmt":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_sample_chrmt[n] = read_count
+	print("Sample data load finished.")
 
+	print("Control data load started.")
 	#コントロールデータを読み込む
 	with open(control_data_name) as control_file:
 		for line in control_file:
 			line = line.split()
+			start = line[1]
+			end = line[2]
+			read_count = line[3]
 			if line[0] == "chrI":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrI[n] = read_count
 			elif line[0] == "chrII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrII[n] = read_count
 			elif line[0] == "chrIII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrIII[n] = read_count
 			elif line[0] == "chrIV":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrIV[n] = read_count
 			elif line[0] == "chrV":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrV[n] = read_count
 			elif line[0] == "chrVI":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrVI[n] = read_count
 			elif line[0] == "chrVII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrVII[n] = read_count
 			elif line[0] == "chrVIII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrVIII[n] = read_count
 			elif line[0] == "chrIX":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrIX[n] = read_count
 			elif line[0] == "chrX":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrX[n] = read_count
 			elif line[0] == "chrXI":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrXI[n] = read_count
 			elif line[0] == "chrXII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrXII[n] = read_count
 			elif line[0] == "chrXIII":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrXIII[n] = read_count
 			elif line[0] == "chrXIV":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrXIV[n] = read_count
 			elif line[0] == "chrXV":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrXV[n] = read_count
 			elif line[0] == "chrXVI":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrXVI[n] = read_count
 			elif line[0] == "chrmt":
-				start = line[1]
-				end = line[2]
-				read_count = line[3]
 				for n in range(int(start), int(end)):
 					array_control_chrmt[n] = read_count
+	print("Control data loading finished.")
 
+	print("Total read count calculation started.")
 	#染色体に由来するリードカウントの総数（つまりミトコンドリアは除く）を求める
 	sample_chromosomal_total_read_count = 0
 	sample_chromosomal_total_read_count += np.sum(array_sample_chrI)
@@ -388,10 +298,12 @@ else:
 	control_chromosomal_total_read_count += np.sum(array_control_chrXIV)
 	control_chromosomal_total_read_count += np.sum(array_control_chrXV)
 	control_chromosomal_total_read_count += np.sum(array_control_chrXVI)
+	print("Total read count calculation finished.")
 
 	#リードカウント総数の比を求める
 	total_read_count_ratio = control_chromosomal_total_read_count / sample_chromosomal_total_read_count
 
+	print("Ratio calculation started.")
 	#各座標についてサンプル/コントロール比を求め、リードカウント総数でノーマライズする
 	for n in range(0, chrI_len):
 		if array_control_chrI[n] == 0:
@@ -473,7 +385,9 @@ else:
 			array_ratio_chrXVI[n] = 0
 		else:
 			array_ratio_chrXVI[n] = array_sample_chrXVI[n] / array_control_chrXVI[n] * total_read_count_ratio
+	print("Ratio calculation finished.")
 
+	print("Output started.")
 	#計算結果を出力ファイルに書き込む
 	output = open(output_name, 'a')
 	for n in range(0, chrI_len):
@@ -508,3 +422,4 @@ else:
 		output.write("chrXV" + "\t" + str(n) + "\t" + str(n+1) + "\t" + str(array_ratio_chrXV[n]) + "\n")
 	for n in range(0, chrXVI_len):
 		output.write("chrXVI" + "\t" + str(n) + "\t" + str(n+1) + "\t" + str(array_ratio_chrXVI[n]) + "\n")
+	print("Output finished.")
