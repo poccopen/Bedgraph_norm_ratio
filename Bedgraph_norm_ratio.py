@@ -198,9 +198,9 @@ else:
 			elif line[0] == "chrmt":
 				for n in range(int(start), int(end)):
 					array_sample_chrmt[n] = read_count
-	print("Sample data load finished.")
+	print("Sample data loading finished.")
 
-	print("Control data load started.")
+	print("Control data loading started.")
 	#コントロールデータを読み込む
 	with open(control_data_name) as control_file:
 		for line in control_file:
