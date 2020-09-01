@@ -8,6 +8,14 @@
 ミトコンドリアゲノムにマップされたリードはリードカウント総数に含めません。
 
 ## Bedgraph_norm_ratio.py
+#### [依存性]
+Biopythonがインストールされている必要があります。
+
+https://biopython.org/
+
+https://biomedicalhacks.com/2020-05-12/biopython-basic-1/
+
+
 #### [使い方]  
 ```$ python3 Bedgraph_norm_ratio.py [Reference_genome_seq.fasta] [Sample_data.bedgraph] [Control_data.bedgraph] [Output_file.bedgraph]```
 
