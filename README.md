@@ -1,5 +1,5 @@
 # Bedgraph_norm_ratio
-※出芽酵母 Saccharomyces cerevisiae 専用です。
+※出芽酵母 <i>Saccharomyces cerevisiae</i> 専用です。
 
 2つのbedgraphファイルを入力として、ゲノムの各座標におけるリードカウントの比を計算します。
 
