@@ -1,20 +1,28 @@
 # Bedgraph_norm_ratio
 ※出芽酵母 Saccharomyces cerevisiae 専用です。
+
 2つのbedgraphファイルを入力として、ゲノムの各座標におけるリードカウントの比を計算します。
+
 リードカウント比はそれぞれのbedgraphに含まれるリードカウント総数でノーマライズされます。
+
 ミトコンドリアゲノムにマップされたリードはリードカウント総数に含めません。
 
-## GATC_TC_extraction.py
+## Bedgraph_norm_ratio.py
 #### [使い方]  
-```$ python3 GATC_TC_extraction.py [filename.sam]```
-
-#### [目的]
-読み始めの配列が"GATC"であるリードと"TC"であるリードを別々に集計します。
+```$ python3 Bedgraph_norm_ratio.py [Reference_genome_seq.fasta] [Sample_data.bedgraph] [Control_data.bedgraph] [Output_file.bedgraph]```
 
 #### [入力ファイル]
-bowtie2によって出力されたマッピング後のSAMファイルを入力ファイルとします。
+入力ファイルは以下の3つです。
+
+Reference_genome_seq.fasta FASTA形式のリファレンスゲノム配列です。染色体名の表記は"chrI"型のみに対応しています。
+
+Control_data.bedgraph サンプル（比を計算する際に分子となる）となるBedgraph形式のファイルです。
+
+Control_data.bedgraph 比較基準（比を計算する際に分母となる）となるBedgraph形式のファイルです。
 
 #### [出力ファイル]
-Bedgraph形式のファイルをふたつ出力します。
-- filename.GATC.bedgraph （リードカウントは"G"の座標にアサインされます）
-- filename.TC.bedgraph （リードカウントは"T"の座標にアサインされます）
+Bedgraph形式のファイルをひとつ出力します。(Output_file.bedgraph)
+
+ゲノムの各座標における サンプルリードカウント/コントロールリードカウント比（リードカウント総数でノーマライズ） が記述されています。
+
+ミトコンドリアゲノム部分についてはデータを出力しません。
