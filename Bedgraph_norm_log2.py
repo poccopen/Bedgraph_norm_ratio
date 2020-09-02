@@ -309,82 +309,82 @@ else:
 		if array_control_chrI[n] == 0:
 			array_ratio_chrI[n] = 0
 		else:
-			array_ratio_chrI[n] = math.log2(array_sample_chrI[n] / array_control_chrI[n] * total_read_count_ratio)
+			array_ratio_chrI[n] = np.log2(array_sample_chrI[n] / array_control_chrI[n] * total_read_count_ratio)
 	for n in range(0, chrII_len):
 		if array_control_chrII[n] == 0:
 			array_ratio_chrII[n] = 0
 		else:
-			array_ratio_chrII[n] = math.log2(array_sample_chrII[n] / array_control_chrII[n] * total_read_count_ratio)
+			array_ratio_chrII[n] = np.log2(array_sample_chrII[n] / array_control_chrII[n] * total_read_count_ratio)
 	for n in range(0, chrIII_len):
 		if array_control_chrIII[n] == 0:
 			array_ratio_chrIII[n] = 0
 		else:
-			array_ratio_chrIII[n] = math.log2(array_sample_chrIII[n] / array_control_chrIII[n] * total_read_count_ratio)
+			array_ratio_chrIII[n] = np.log2(array_sample_chrIII[n] / array_control_chrIII[n] * total_read_count_ratio)
 	for n in range(0, chrIV_len):
 		if array_control_chrIV[n] == 0:
 			array_ratio_chrIV[n] = 0
 		else:
-			array_ratio_chrIV[n] = math.log2(array_sample_chrIV[n] / array_control_chrIV[n] * total_read_count_ratio)
+			array_ratio_chrIV[n] = np.log2(array_sample_chrIV[n] / array_control_chrIV[n] * total_read_count_ratio)
 	for n in range(0, chrV_len):
 		if array_control_chrV[n] == 0:
 			array_ratio_chrV[n] = 0
 		else:
-			array_ratio_chrV[n] = math.log2(array_sample_chrV[n] / array_control_chrV[n] * total_read_count_ratio)
+			array_ratio_chrV[n] = np.log2(array_sample_chrV[n] / array_control_chrV[n] * total_read_count_ratio)
 	for n in range(0, chrVI_len):
 		if array_control_chrVI[n] == 0:
 			array_ratio_chrVI[n] = 0
 		else:
-			array_ratio_chrVI[n] = math.log2(array_sample_chrVI[n] / array_control_chrVI[n] * total_read_count_ratio)
+			array_ratio_chrVI[n] = np.log2(array_sample_chrVI[n] / array_control_chrVI[n] * total_read_count_ratio)
 	for n in range(0, chrVII_len):
 		if array_control_chrVII[n] == 0:
 			array_ratio_chrVII[n] = 0
 		else:
-			array_ratio_chrVII[n] = math.log2(array_sample_chrVII[n] / array_control_chrVII[n] * total_read_count_ratio)
+			array_ratio_chrVII[n] = np.log2(array_sample_chrVII[n] / array_control_chrVII[n] * total_read_count_ratio)
 	for n in range(0, chrVIII_len):
 		if array_control_chrVIII[n] == 0:
 			array_ratio_chrVIII[n] = 0
 		else:
-			array_ratio_chrVIII[n] = math.log2(array_sample_chrVIII[n] / array_control_chrVIII[n] * total_read_count_ratio)
+			array_ratio_chrVIII[n] = np.log2(array_sample_chrVIII[n] / array_control_chrVIII[n] * total_read_count_ratio)
 	for n in range(0, chrIX_len):
 		if array_control_chrIX[n] == 0:
 			array_ratio_chrIX[n] = 0
 		else:
-			array_ratio_chrIX[n] = math.log2(array_sample_chrIX[n] / array_control_chrIX[n] * total_read_count_ratio)
+			array_ratio_chrIX[n] = np.log2(array_sample_chrIX[n] / array_control_chrIX[n] * total_read_count_ratio)
 	for n in range(0, chrX_len):
 		if array_control_chrX[n] == 0:
 			array_ratio_chrX[n] = 0
 		else:
-			array_ratio_chrX[n] = math.log2(array_sample_chrX[n] / array_control_chrX[n] * total_read_count_ratio)
+			array_ratio_chrX[n] = np.log2(array_sample_chrX[n] / array_control_chrX[n] * total_read_count_ratio)
 	for n in range(0, chrXI_len):
 		if array_control_chrXI[n] == 0:
 			array_ratio_chrXI[n] = 0
 		else:
-			array_ratio_chrXI[n] = math.log2(array_sample_chrXI[n] / array_control_chrXI[n] * total_read_count_ratio)
+			array_ratio_chrXI[n] = np.log2(array_sample_chrXI[n] / array_control_chrXI[n] * total_read_count_ratio)
 	for n in range(0, chrXII_len):
 		if array_control_chrXII[n] == 0:
 			array_ratio_chrXII[n] = 0
 		else:
-			array_ratio_chrXII[n] = math.log2(array_sample_chrXII[n] / array_control_chrXII[n] * total_read_count_ratio)
+			array_ratio_chrXII[n] = np.log2(array_sample_chrXII[n] / array_control_chrXII[n] * total_read_count_ratio)
 	for n in range(0, chrXIII_len):
 		if array_control_chrXIII[n] == 0:
 			array_ratio_chrXIII[n] = 0
 		else:
-			array_ratio_chrXIII[n] = math.log2(array_sample_chrXIII[n] / array_control_chrXIII[n] * total_read_count_ratio)
+			array_ratio_chrXIII[n] = np.log2(array_sample_chrXIII[n] / array_control_chrXIII[n] * total_read_count_ratio)
 	for n in range(0, chrXIV_len):
 		if array_control_chrXIV[n] == 0:
 			array_ratio_chrXIV[n] = 0
 		else:
-			array_ratio_chrXIV[n] = math.log2(array_sample_chrXIV[n] / array_control_chrXIV[n] * total_read_count_ratio)
+			array_ratio_chrXIV[n] = np.log2(array_sample_chrXIV[n] / array_control_chrXIV[n] * total_read_count_ratio)
 	for n in range(0, chrXV_len):
 		if array_control_chrXV[n] == 0:
 			array_ratio_chrXV[n] = 0
 		else:
-			array_ratio_chrXV[n] = math.log2(array_sample_chrXV[n] / array_control_chrXV[n] * total_read_count_ratio)
+			array_ratio_chrXV[n] = np.log2(array_sample_chrXV[n] / array_control_chrXV[n] * total_read_count_ratio)
 	for n in range(0, chrXVI_len):
 		if array_control_chrXVI[n] == 0:
 			array_ratio_chrXVI[n] = 0
 		else:
-			array_ratio_chrXVI[n] = math.log2(array_sample_chrXVI[n] / array_control_chrXVI[n] * total_read_count_ratio)
+			array_ratio_chrXVI[n] = np.log2(array_sample_chrXVI[n] / array_control_chrXVI[n] * total_read_count_ratio)
 	print("Ratio calculation finished.")
 
 	print("Output started.")
