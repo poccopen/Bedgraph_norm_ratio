@@ -14,7 +14,6 @@ https://biopython.org/
 
 https://biomedicalhacks.com/2020-05-12/biopython-basic-1/
 
-
 #### [使い方]  
 ```$ python3 Bedgraph_norm_ratio.py [Reference_genome_seq.fasta] [Sample_data.bedgraph] [Control_data.bedgraph] [Output_file.bedgraph]```
 
@@ -23,7 +22,7 @@ https://biomedicalhacks.com/2020-05-12/biopython-basic-1/
 
 Reference_genome_seq.fasta FASTA形式のリファレンスゲノム配列です。染色体名の表記は"chrI"型のみに対応しています。
 
-Control_data.bedgraph サンプル（比を計算する際に分子となる）となるBedgraph形式のファイルです。
+Sample_data.bedgraph サンプル（比を計算する際に分子となる）となるBedgraph形式のファイルです。
 
 Control_data.bedgraph 比較基準（比を計算する際に分母となる）となるBedgraph形式のファイルです。
 
@@ -33,8 +32,6 @@ Bedgraph形式のファイルをひとつ出力します。(Output_file.bedgraph
 ゲノムの各座標における サンプルリードカウント/コントロールリードカウント比（リードカウント総数でノーマライズ） が記述されています。
 
 ミトコンドリアゲノム部分についてはデータを出力しません。
-
-
 
 ## Bedgraph_norm_log2.py
 "Bedgraph_norm_ratio.py"の姉妹品です。
@@ -46,3 +43,18 @@ Bedgraph形式のファイルをひとつ出力します。(Output_file.bedgraph
 リードカウント比はそれぞれのbedgraphに含まれるリードカウント総数でノーマライズされます。
 
 ミトコンドリアゲノムにマップされたリードはリードカウント総数に含めません。
+
+## Bedgraph_normalize.py
+1つのbedgraphファイルを入力として、ゲノムの各座標におけるリードカウントをリードカウント総数でノーマライズします。
+
+ミトコンドリアゲノムにマップされたリードはリードカウント総数に含めません。
+
+#### [使い方]  
+```$ python3 Bedgraph_norm_ratio.py [Reference_genome_seq.fasta] [Sample_data.bedgraph] [Output_file.bedgraph]```
+
+#### [入力ファイル]
+入力ファイルは以下の2つです。
+
+Reference_genome_seq.fasta FASTA形式のリファレンスゲノム配列です。染色体名の表記は"chrI"型のみに対応しています。
+
+Sample_data.bedgraph ノーマライズ対象とするBedgraph形式のファイルです。
