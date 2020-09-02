@@ -225,37 +225,37 @@ else:
 	print("Normalization started.")
 	#各座標についてサンプル/コントロール比を求め、リードカウント総数でノーマライズする
 	for n in range(0, chrI_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrI[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrI[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrII_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrII[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrII[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrIII_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrIII[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrIII[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrIV_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrIV[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrIV[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrV_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrV[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrV[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrVI_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrVI[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrVI[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrVII_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrVII[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrVII[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrVIII_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrVIII[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrVIII[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrIX_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrIX[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrIX[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrX_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrX[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrX[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrXI_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrXI[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrXI[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrXII_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrXII[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrXII[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrXIII_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrXIII[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrXIII[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrXIV_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrXIV[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrXIV[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrXV_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrXV[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrXV[n] / sample_chromosomal_total_read_count * total_genome_size)
 	for n in range(0, chrXVI_len):
-		array_ratio_chrI[n] = math.log2(array_sample_chrXVI[n] / sample_chromosomal_total_read_count * total_genome_size)
+		array_ratio_chrI[n] = (array_sample_chrXVI[n] / sample_chromosomal_total_read_count * total_genome_size)
 	print("Normalization finished.")
 
 	print("Output started.")
