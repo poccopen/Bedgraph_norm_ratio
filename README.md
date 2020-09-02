@@ -37,6 +37,8 @@ Bedgraph形式のファイルをひとつ出力します。(Output_file.bedgraph
 ## Bedgraph_norm_log2.py
 "Bedgraph_norm_ratio.py"の姉妹品です。
 
+依存性・使い方・入力ファイル・出力ファイルについては、"Bedgraph_norm_ratio.py"と同様です。
+
 2つのbedgraphファイルを入力として、ゲノムの各座標におけるリードカウントの比のlog2を計算します。
 
 リードカウント比はそれぞれのbedgraphに含まれるリードカウント総数でノーマライズされます。
