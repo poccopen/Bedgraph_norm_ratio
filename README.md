@@ -34,6 +34,8 @@ Bedgraph形式のファイルをひとつ出力します。(Output_file.bedgraph
 
 ミトコンドリアゲノム部分についてはデータを出力しません。
 
+
+
 ## Bedgraph_norm_log2.py
 "Bedgraph_norm_ratio.py"の姉妹品です。
 
