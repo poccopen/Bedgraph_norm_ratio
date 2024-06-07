@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/291934376.svg)](https://zenodo.org/badge/latestdoi/291934376)
 ## Bedgraph_norm_ratio.py
 ※出芽酵母 <i>Saccharomyces cerevisiae</i> 専用です。
 
